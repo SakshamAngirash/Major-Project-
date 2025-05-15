@@ -14,6 +14,41 @@ eVault is a decentralized platform designed to securely store and verify digital
 
 ---
 
-## 🏗️ Folder Structure
-![Uploading image.png…]()
+## Who It's For
+
+- **Legal Professionals**: Lawyers, judges, and investigators needing evidence authentication
+- **Forensic Teams**: Digital evidence verification specialists
+- **Government Agencies**: Secure document archiving and retrieval
+- **Corporate Compliance**: Contract and agreement validation
+
+---
+
+## Tech Stack
+
+| Component          | Technology                          |
+|--------------------|-------------------------------------|
+| Blockchain         | Ethereum, Solidity, Hardhat         |
+| Frontend           | React.js, Material-UI               |
+| Storage            | IPFS (via Pinata)                   |
+| Machine Learning   | Python, OpenCV, Scikit-learn        |
+| Cryptography       | SHA-256, Digital Signatures         |
+| API                | FastAPI (Python)                    |
+
+---
+
+## API Reference
+
+### POST /verify-signature
+Analyze digital signatures for authenticity using ML and blockchain verification.
+
+**Endpoint**: `/verify-signature`  
+**Method**: `POST`  
+**Content-Type**: `application/json`
+
+```json
+{
+  "image": "base64_encoded_image",
+  "user_id": "unique_identifier",
+  "metadata": {}
+}
 
