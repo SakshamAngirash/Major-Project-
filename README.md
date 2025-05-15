@@ -16,25 +16,19 @@ eVault is a decentralized platform designed to securely store and verify digital
 
 ## 🏗️ Folder Structure
 eVault/
-│
 ├── client/ # Frontend (React)
 │ ├── public/ # Static files
-│ ├── src/ # React source code
-│ └── README.md
-│
+│ └── src/ # React source code
 ├── contracts/ # Solidity smart contracts
 │ ├── Upload.sol
 │ └── cryptography/ # Cryptographic utilities
-│
 ├── Features/ # Signature verification logic
 │ ├── Testing/ # Test signature samples
 │ └── Training/ # Model training data
-│
 ├── forged/ # Forged signature data
 ├── real/ # Real signature data
 ├── TestFeatures/ # Testing ML features
 ├── scripts/ # Hardhat scripts
-│
 ├── project.ipynb # Jupyter notebook for ML experiments
 ├── project.py # Backend logic for ML
 ├── hardhat.config.js # Hardhat configuration
