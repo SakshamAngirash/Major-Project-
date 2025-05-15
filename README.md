@@ -1,18 +1,14 @@
-# 🔐 eVault – Blockchain-Based Evidence Verification and Storage System
+# 🔐 eVault – Blockchain-Based Evidence Verification System
 
-eVault is a decentralized platform designed to securely store and verify digital evidence (like signatures, documents, and images) using Blockchain (Ethereum), IPFS (InterPlanetary File System), and Machine Learning. It aims to support investigators, lawyers, and judges by ensuring the integrity and authenticity of digital proof.
+eVault is a decentralized platform that securely stores and verifies digital evidence (signatures, documents, images) using Ethereum blockchain, IPFS, and Machine Learning. Designed for legal professionals to ensure digital proof integrity.
 
----
+## Key Features
 
-## 📌 Features
-
-- 🔗 **Blockchain Integration** (Ethereum + Hardhat): Immutable proof storage using smart contracts.
-- 🗃️ **IPFS Decentralized Storage**: Stores files in a tamper-proof, distributed manner.
-- 🧠 **AI-Based Signature Verification**: Detects forged vs. genuine signatures using ML.
-- 🧪 **Evidence Viewer**: Users can view and share files with hash verification.
-- 🛡️ **Cybersecurity Module**: Basic cryptography layer for secure communication.
-
----
+- 🛡️ **Blockchain-Verified Storage**: Immutable evidence records on Ethereum
+- 🔍 **AI Signature Authentication**: ML-powered forgery detection 
+- 🌐 **IPFS Hosting**: Tamper-proof distributed file storage
+- 📄 **Smart Evidence Viewer**: Secure document access with hash verification
+- 🔐 **End-to-End Encryption**: Military-grade cryptographic protection
 
 ## Who It's For
 
@@ -32,23 +28,107 @@ eVault is a decentralized platform designed to securely store and verify digital
 | Storage            | IPFS (via Pinata)                   |
 | Machine Learning   | Python, OpenCV, Scikit-learn        |
 | Cryptography       | SHA-256, Digital Signatures         |
-| API                | FastAPI (Python)                    |
 
 ---
 
-## API Reference
+## Folder Struture 
+```
+eVault/
+├── client/ # Frontend (React)
+│ ├── public/ # Static files
+│ └── src/ # React source code
+├── contracts/ # Solidity smart contracts
+│ ├── Upload.sol
+│ └── cryptography/ # Cryptographic utilities
+├── Features/ # Signature verification logic
+│ ├── Testing/ # Test signature samples
+│ └── Training/ # Model training data
+├── forged/ # Forged signature data
+├── real/ # Real signature data
+├── TestFeatures/ # Testing ML features
+├── scripts/ # Hardhat scripts
+├── project.ipynb # Jupyter notebook for ML experiments
+├── project.py # Backend logic for ML
+├── hardhat.config.js # Hardhat configuration
+├── package.json # Node.js dependencies
+├── .gitignore
+└── README.md
+```
 
-### POST /verify-signature
-Analyze digital signatures for authenticity using ML and blockchain verification.
+## 🚀 How to Run This Project
 
-**Endpoint**: `/verify-signature`  
-**Method**: `POST`  
-**Content-Type**: `application/json`
+### Prerequisites
+- Node.js v18+
+- Python 3.10+
+- MetaMask (Browser Extension)
+- Git
+- Yarn/npm
 
-```json
-{
-  "image": "base64_encoded_image",
-  "user_id": "unique_identifier",
-  "metadata": {}
-}
+### Installation
 
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/SakshamAngirash/Major-Project.git
+   cd eVault
+   ```
+   
+2. **Install frontend dependencies**:
+   ```bash
+   cd ..
+   npm install  # or yarn install
+   ```   
+
+3. **Install Python dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```     
+
+### Configuration
+
+   ```bash
+   # Blockchain
+   ETHEREUM_RPC_URL=http://localhost:8545
+   PRIVATE_KEY=your_wallet_private_key
+
+   # IPFS
+   IPFS_API_KEY=your_pinata_api_key
+   IPFS_SECRET_API_KEY=your_pinata_secret
+
+   # ML Server
+   ML_API_PORT=5000
+   ``` 
+
+### Configuration
+
+   ```bash
+   # Blockchain
+   ETHEREUM_RPC_URL=http://localhost:8545
+   PRIVATE_KEY=your_wallet_private_key
+
+   # IPFS
+   IPFS_API_KEY=your_pinata_api_key
+   IPFS_SECRET_API_KEY=your_pinata_secret
+
+   # ML Server
+   ML_API_PORT=5000
+   ```            
+
+### Running the Project
+
+1. **Start local Ethereum node (in separate terminal)**:
+   ```bash
+    npx hardhat node
+   ```
+   
+2. **Deploy smart contracts (in new terminal)**:
+   ```bash
+   npx hardhat run scripts/deploy.js --network localhost
+   ```   
+
+   
+3. **Launch frontend (in new terminal)**:
+   ```bash
+   cd client
+   npm start
+   ```   
+  
