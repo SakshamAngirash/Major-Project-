@@ -1,4 +1,4 @@
-# 🔐 eVault – Blockchain-Based Evidence Verification and Storage System
+![image](https://github.com/user-attachments/assets/c4c666c1-f9f2-4ea9-8607-565d179c13c1)# 🔐 eVault – Blockchain-Based Evidence Verification and Storage System
 
 eVault is a decentralized platform designed to securely store and verify digital evidence (like signatures, documents, and images) using Blockchain (Ethereum), IPFS (InterPlanetary File System), and Machine Learning. It aims to support investigators, lawyers, and judges by ensuring the integrity and authenticity of digital proof.
 
@@ -15,23 +15,5 @@ eVault is a decentralized platform designed to securely store and verify digital
 ---
 
 ## 🏗️ Folder Structure
--eVault/
--├── client/ # Frontend (React)
--│ ├── public/ # Static files
--│ └── src/ # React source code
--├── contracts/ # Solidity smart contracts
--│ ├── Upload.sol
--│ └── cryptography/ # Cryptographic utilities
--├── Features/ # Signature verification logic
--│ ├── Testing/ # Test signature samples
--│ └── Training/ # Model training data
--├── forged/ # Forged signature data
--├── real/ # Real signature data
--├── TestFeatures/ # Testing ML features
--├── scripts/ # Hardhat scripts
--├── project.ipynb # Jupyter notebook for ML experiments
--├── project.py # Backend logic for ML
--├── hardhat.config.js # Hardhat configuration
--├── package.json # Node.js dependencies
--├── .gitignore
--└── README.md
+![Uploading image.png…]()
+
