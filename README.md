@@ -3,7 +3,7 @@
 eVault is a decentralized platform that securely stores and verifies digital evidence (signatures, documents, images) using Ethereum blockchain, IPFS, and Machine Learning. Designed for legal professionals to ensure digital proof integrity.
 
 PRESENTATION : 
-LIVE DEMO : [https://youtu.be/kedkmKf02FU?si=FWdhkbQS1RpSZ23a](url)
+LIVE DEMO : https://youtu.be/kedkmKf02FU?si=FWdhkbQS1RpSZ23a
 
 ## Key Features
 
